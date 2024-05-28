@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PagesQ22024.Flyout.Flyout1"
+             Title="Flyout1"
+            FlyoutLayoutBehavior="Popover">
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Flyout">
+            <VerticalStackLayout>
+                <Label Text="Opción 1" />
+            </VerticalStackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage>
+                    <VerticalStackLayout Padding="40" Spacing="20">
+                        <Label Text="Pagina principal" />
+                        <Button x:Name="btnPagina2" Text="Ir a la siguiente página" Clicked="btnPagina2_Clicked" />
+                    </VerticalStackLayout>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>

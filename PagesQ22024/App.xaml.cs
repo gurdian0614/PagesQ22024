@@ -1,4 +1,6 @@
-﻿namespace PagesQ22024
+﻿using PagesQ22024.Flyout;
+
+namespace PagesQ22024
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new MainPage());
         }
     }
 }
